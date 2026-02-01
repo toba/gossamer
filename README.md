@@ -17,7 +17,7 @@ A Zed editor extension providing CSS3 language intelligence, powered by [go-css-
 - **Code Actions** — quick fixes
 - **Folding Ranges** — code folding
 - **Document Links** — clickable URLs
-- **Formatting** — CSS pretty-printer (supports format on save)
+- **Formatting** — CSS pretty-printer with expanded, compact, and preserve modes (supports format on save)
 - **Selection Ranges** — expand/shrink selection
 
 ## Installation
@@ -54,6 +54,36 @@ Add to your Zed `settings.json`:
   }
 }
 ```
+
+## Formatting Modes
+
+The formatter supports three modes:
+
+| Mode | Behavior |
+|------|----------|
+| **expanded** (default) | One declaration per line |
+| **compact** | Single-line rulesets when they fit within `printWidth` |
+| **preserve** | Keeps original single/multi-line layout, normalizes whitespace |
+
+Configure via `initialization_options` in your Zed `settings.json`:
+
+```json
+{
+  "lsp": {
+    "Gossamer": {
+      "initialization_options": {
+        "formatMode": "compact",
+        "printWidth": 80
+      }
+    }
+  }
+}
+```
+
+| Setting | Type | Default | Description |
+|---------|------|---------|-------------|
+| `formatMode` | string | `"expanded"` | `"expanded"`, `"compact"`, or `"preserve"` |
+| `printWidth` | int | `80` | Max line width for compact mode |
 
 ## Building
 
