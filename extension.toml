@@ -1,9 +1,9 @@
 id = "gossamer"
 name = "Gossamer"
-version = "0.10.5"
+version = "0.10.6"
 schema_version = 1
 authors = ["Jason Abbott"]
-description = "CSS3 language intelligence powered by go-css-lsp"
+description = "Modern, pure CSS language intelligence powered by go-css-lsp"
 repository = "https://github.com/toba/gossamer"
 
 [language_servers.gossamer]
