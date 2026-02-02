@@ -1,6 +1,6 @@
 # Gossamer
 
-A Zed editor extension providing CSS3 language intelligence, powered by [go-css-lsp](https://github.com/toba/go-css-lsp).
+A Zed editor extension providing modern, pure CSS language intelligence, powered by [go-css-lsp](https://github.com/toba/go-css-lsp).
 
 ## Features
 
