@@ -1,6 +1,6 @@
 id = "gossamer"
 name = "Gossamer"
-version = "0.10.6"
+version = "0.10.7"
 schema_version = 1
 authors = ["Jason Abbott"]
 description = "Modern, pure CSS language intelligence powered by go-css-lsp"
